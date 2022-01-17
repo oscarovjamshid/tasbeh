@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#222, #111, #000);
+}
+
+.tasbex{
+    width: 277px;
+    height: 450px;
+    background: url(tasbex.jpg) no-repeat center bottom / cover;
+    position: relative;
+}
+
+.display{
+    width: 138px;
+    height: 58px;
+    position: absolute;
+    left: 50.5%;
+    top: 44%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border: 2px solid #747474;
+    background: linear-gradient(45deg, rgb(40, 42, 40), rgb(69, 73, 69));
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    color: #acacac;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: Impact, sans-serif;
+    cursor: default;
+}
+
+.display::selection{
+    display: none;
+}
+
+.add{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.res{
+    width: 27px;
+    height: 25px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    border-radius: 50%;
+    position: absolute;
+    left: 62%;
+    top: 63%;
+    cursor: pointer;
+}
+
+.res:hover,
+.add:hover{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+}
